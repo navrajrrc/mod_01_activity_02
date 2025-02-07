@@ -28,7 +28,7 @@ class Shape(ABC):
         return f"The shape color is {self._color}."
     
     @abstractmethod
-    def calcualte_area(self) -> float:
+    def calculate_area(self) -> float:
         """
         This is a method to calculate the area of the shape.
         """

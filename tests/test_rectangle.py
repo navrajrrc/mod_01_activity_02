@@ -6,7 +6,7 @@ Usage:
     $ python -m unittest tests/test_rectangle.py
 """
 
-__author__ = ""
+__author__ = "Navraj singh"
 __version__ = ""
 
 import unittest
@@ -49,7 +49,7 @@ class rectangletests(unittest.TestCase):
         This test will check if it return the str in the expected format.
         """
         self.rectangle = Rectangle("white", 4, 6)
-        expected_str = "The shape color is white.\n This rectangle has four sides with the lengths of 4, 6, 4 and 6 centimeters."      
+        expected_str = "The shape color is white.\nThis rectangle has four sides with the lengths of 4, 6, 4 and 6 centimeters."      
         self.assertEqual(str(self.rectangle), expected_str)
 
     def test_calculate_area(self):
@@ -58,7 +58,7 @@ class rectangletests(unittest.TestCase):
         """
         self.rectangle = Rectangle("white", 4, 6)
         expected_area = 4 * 6 
-        self.assertEqual(self.rectangle.calcualte_area(), expected_area)
+        self.assertEqual(self.rectangle.calculate_area(), expected_area)
 
     def test_calculate_perimeter(self):
         """

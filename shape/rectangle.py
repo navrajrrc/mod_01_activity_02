@@ -31,10 +31,10 @@ class Rectangle(Shape):
         this method will return the string in the formatted way.
         """
         value = super().__str__()
-        value+= f"\n This rectangle has four sides with the lengths of {self._length}, {self._width}, {self._length} and {self._width} centimeters."
+        value+= f"\nThis rectangle has four sides with the lengths of {self._length}, {self._width}, {self._length} and {self._width} centimeters."
         return value
     
-    def calcualte_area(self) -> float:
+    def calculate_area(self) -> float:
         """
         this method is to calcualte the area of the rectangle.
         """

@@ -56,17 +56,17 @@ class Triangletests(unittest.TestCase):
         This is a test to check the string is created in the expected format.
         """
         self.triangle = Triangle("black", 4, 5, 6)
-        expected_str = ( "The shape color is black.\n This triangle has three sides with the lengths of 4, 5, and 6 centimeters.")
+        expected_str = ( "The shape color is black.\nThis triangle has three sides with the lengths of 4, 5, and 6 centimeters.")
         self.assertEqual(str(self.triangle), expected_str)
 
-    def test_calaculate_area(self):
+    def test_calculate_area(self):
         """
         This test is to check if it returns the correct calculated area.
         """
         self.triangle = Triangle("black", 4, 5, 6)
         perimeter = (4 + 5 + 6) / 2
         expected_area = math.sqrt(perimeter * (perimeter - 4) * (perimeter - 5) * (perimeter - 6))
-        self.assertEqual(self.triangle.calcualte_area(), expected_area)
+        self.assertEqual(self.triangle.calculate_area(), expected_area)
 
     def test_calculate_perimeter(self):
         """
