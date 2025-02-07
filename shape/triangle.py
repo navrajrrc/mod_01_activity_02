@@ -10,12 +10,18 @@ class Triangle(Shape):
     """
     This is a class for the triangle shape and will contain 
     its attributes and valuerrros.
-    Attributes:
-        side_1: Represents the length of the first side of the Triangle in centimeters.
-        side_2: Represents the length of the second side of the Triangle in centimeters.
-        side_3: Represents the lenght of the third side of the Triangle in centimeters.
     """
     def __init__(self, color: str, side_1:int, side_2: int, side_3:int):
+        """
+        Attributes:
+            color: (Str) The color of the triangle
+            side_1: Length of the first side in centimeters.(int)
+            side_2: Length of the second side in centimeters.(int)
+            side_3: Length of the third side in centimeters.(int)
+        ValueError:
+            If any of the side is not an integar.
+            If the side do not satisfy the Triangle Inequality Theorm.
+        """
         super().__init__(color)
 
         if not isinstance(side_1, int):
@@ -36,7 +42,7 @@ class Triangle(Shape):
 
     def __str__(self) -> str:
         """
-        
+        This def method will return the string in a formatted way.
         """
         value = super().__str__()
         value+= f"\n This triangle has three sides with the lenghts of {self._side_1}, {self._side_2}, and {self._side_3} centimeters."
@@ -44,7 +50,7 @@ class Triangle(Shape):
     
     def calcualte_area(self) -> float:
         """
-        
+        This def method will return the calculated area of the triangle.
         """
         semi_perimeter = (self._side_1 + self._side_2 + self._side_3) / 2
         area = math.sqrt(semi_perimeter * (semi_perimeter - self._side_1) *
@@ -53,6 +59,6 @@ class Triangle(Shape):
     
     def calculate_perimeter(self) -> float:
         """
-        
+        This def method will return the calculated perimeter of the triangle.
         """
         return (self._side_1 + self._side_2 + self._side_3)
