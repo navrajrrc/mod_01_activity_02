@@ -6,7 +6,7 @@ __version__ = ""
 from shape.shape import Shape
 import math
 
-class rectangle(Shape):
+class Rectangle(Shape):
     """
     This is a class for the shape rectangle.
     """
@@ -31,10 +31,10 @@ class rectangle(Shape):
         this method will return the string in the formatted way.
         """
         value = super().__str__()
-        value+= f"\n This rectangle has four sides with the lengths of {{length}}, {{width}}, {{length}} and {{width}} centimeters."
+        value+= f"\n This rectangle has four sides with the lengths of {self._length}, {self._width}, {self._length} and {self._width} centimeters."
         return value
     
-    def _calculate_area(self) -> float:
+    def calcualte_area(self) -> float:
         """
         this method is to calcualte the area of the rectangle.
         """
@@ -45,5 +45,7 @@ class rectangle(Shape):
         this method is to calculate the perimeter of the rectangle.
         """
         return 2 * self._length + 2 * self._width
+    
+
     
 

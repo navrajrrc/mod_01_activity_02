@@ -66,7 +66,7 @@ class Triangletests(unittest.TestCase):
         self.triangle = Triangle("black", 4, 5, 6)
         perimeter = (4 + 5 + 6) / 2
         expected_area = math.sqrt(perimeter * (perimeter - 4) * (perimeter - 5) * (perimeter - 6))
-        self.assertAlmostEqual(self.triangle.calcualte_area(), expected_area)
+        self.assertEqual(self.triangle.calcualte_area(), expected_area)
 
     def test_calculate_perimeter(self):
         """
