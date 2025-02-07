@@ -45,7 +45,7 @@ class Triangle(Shape):
         This def method will return the string in a formatted way.
         """
         value = super().__str__()
-        value+= f"\n This triangle has three sides with the lenghts of {self._side_1}, {self._side_2}, and {self._side_3} centimeters."
+        value+= f"\n This triangle has three sides with the lengths of {self._side_1}, {self._side_2}, and {self._side_3} centimeters."
         return value
     
     def calcualte_area(self) -> float:
