@@ -13,4 +13,7 @@ Navraj singh
 
 ## Additional Information
 
-[ Use this space to include additional information that may help in your learning. ]
+Learned how to class and subclass in python
+Leanred Abstraction, Encapsulation, Inheritance, Polymorphism
+Use of math.sqrt
+Import of a package 
