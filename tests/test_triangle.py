@@ -6,7 +6,7 @@ Usage:
     $ python -m unittest tests/test_triangle.py
 """
 
-__author__ = ""
+__author__ = "Navraj singh"
 __version__ = ""
 
 import unittest
